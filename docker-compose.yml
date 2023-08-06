@@ -54,6 +54,7 @@ services:
     volumes:
       - wordpress:/var/www/html
       - ./themes/main:/var/www/html/wp-content/themes/main
+      - ./mu-plugins:/var/www/html/wp-content/mu-plugins
     networks:
       - wordpress-network
 
