@@ -12,7 +12,10 @@
 
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
-
+    <h1>List of State and Territories</h1>
+    <div class='state-list'>
+        <?php include 'fetch_states.php'; ?>
+    </div>
 
     </main><!-- #main -->
   </div><!-- #primary -->

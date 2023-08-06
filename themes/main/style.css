@@ -1,3 +1,20 @@
 body {
     background-color: tan;
+    text-align: center;
+}
+
+h1 {
+    text-decoration: underline;
+}
+
+.state-list {
+    list-style-type: none;
+}
+
+.state-list li {
+    padding: 5px 0;
+}
+
+#footer {
+    display: none;
 }
