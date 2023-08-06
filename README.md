@@ -6,7 +6,7 @@ This is a simple Wordpress application that displays a list of all the US states
 
 ## Requirements
 
-In order to set up local development environment you will nee the following:
+In order to set up local development environment you will need the following:
 
 - [Docker](https://docs.docker.com/get-started/)
 - [Docker Compose](https://docs.docker.com/compose/install/)
@@ -49,9 +49,11 @@ cp .env.example .env
 ```
 Feel free to change these custom variables if you'd like
 
-5. Start our docker container
+5. Start our docker containers
 
-In the project directory run ...
+Make sure you have docker running in the background
+
+In the main project directory run ...
 
 ```
 docker-compose up -d 
@@ -83,7 +85,6 @@ You will be brought into the admin.
 
 If you forget the password and username, you'll lose admin access, and there is no recovery solution currently. But you'll still be able to see the build at localhost:8080
 
-
 7. Click on the house dropdown in top left corner
 
 ![Home](./images/home.png)
@@ -92,12 +93,15 @@ You'll be brought to the page with the desired functionality
 
 ![Final](./images/page.png)
 
-To close the container..
+To close the containers..
 
 ```
 docker-compose down
 ```
 
 ## Notes
- - This was built on Ubuntu/Linux 
- - I used mariadb for compatibility
+ - This was built on Ubuntu/Linux
+ - I used mariadb for compatibility reasons
+ - I'm using the `cached_data.json` file to hold the `public.opendatasoft.com` data
+ - `/mu_plugins` is being used to auto-assign the custom theme to  'main' during the install 
+ - If you run into any problems you can contact me here: `howardjake9512@gmail.com`
