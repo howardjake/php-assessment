@@ -105,4 +105,4 @@ docker-compose down
  - `/mu_plugins` is being used to auto-assign the custom theme to  'main' during the install 
  - If you run into any problems you can contact me here: `howardjake9512@gmail.com`
 
- Thank you :dog:
+ Thank you :thumbsup::dog:
