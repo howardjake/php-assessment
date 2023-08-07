@@ -1,10 +1,12 @@
 # jake-h-assessment
 
-This is a simple Wordpress application that displays a list of all the US states and territories
+
+
+This is a simple Wordpress application that displays a list of all the US states and territories :us:
 
 ![Docker Containers](./images/docker_ps.png)
 
-## Requirements
+## Requirements :wrench:
 
 In order to set up local development environment you will need the following:
 
@@ -13,7 +15,7 @@ In order to set up local development environment you will need the following:
 - [PHP](https://www.php.net/manual/en/install.php)
 - [Composer](https://getcomposer.org/)
 
-## Getting Started
+## Getting Started :fire:
 
 ### 1. First make sure you have all the requirements above.
 
@@ -25,10 +27,6 @@ At the project level directory run this:
 ```
 cd themes/main/
 composer install
-```
-
-.. and, step back up to the project directory.
-```
 cd .. 
 cd ..
 ```
@@ -57,10 +55,8 @@ In the main project directory run ...
 
 ```
 docker-compose up -d 
-
-
 ```
-or this to keep the log running your terminal
+or this to keep the log running in your terminal
 
 ```
 docker-compose up 
@@ -76,17 +72,15 @@ Visit [localhost:8080](http://localhost:8080/) and you should see this.
 
 ![WP Install](./images/wp_start.png)
 
-Continue on, 
-
 - choose a region
 - pick a site title
-- create your own username
+- create your username
 - create a password
 - add an email
+- click install
+- you will be brought into the wp admin
 
-You will be brought into the wp admin.
-
-If you forget the password and username, you'll lose admin access, and there is no recovery solution currently. But you'll still be able to see the build at the index page
+If you forget the password and/or username, you'll lose admin access, and there is no recovery solution currently. But you'll still be able to see the build at the index page.
 
 ### 7. Click on the dropdown in top left corner, or just go [here](http://localhost:8080/)
 
@@ -96,7 +90,7 @@ This is the page with the desired functionality:
 
 ![Final](./images/page.png)
 
-# Wrapping up 
+# Wrapping up :burrito:
 
 To close the containers:
 
@@ -104,10 +98,11 @@ To close the containers:
 docker-compose down
 ```
 
-
-## Notes
+## Notes :notebook:
  - This was built on Ubuntu/Linux
  - I used mariadb for compatibility reasons
  - I'm using the `cached_data.json` file to hold the `public.opendatasoft.com` data
  - `/mu_plugins` is being used to auto-assign the custom theme to  'main' during the install 
  - If you run into any problems you can contact me here: `howardjake9512@gmail.com`
+
+ Thank you :dog:
